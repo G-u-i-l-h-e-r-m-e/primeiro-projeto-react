@@ -19,7 +19,7 @@ const Card = () => {
         },
     ];
 
-    console.log(cardData);
+    // console.log(cardData);
     return(
         
         <div className="card-container">

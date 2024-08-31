@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 .card{
-    background: rgb(243, 219, 138);
+    background: rgb(255, 203, 33);
     border: 1px solid;
     border-radius: 8px;
     margin-right: 15px;
@@ -13,7 +13,9 @@
     width: 100%;
     max-width: 250px;
     margin-bottom: 15px;
-    box-shadow:11px 9px 3px 1px rgb(248, 209, 80);
+    box-shadow:11px 9px 3px 1px rgb(241, 206, 90);
+    transition: all .3s;
+    cursor: pointer;
     
 }
 .card h2{
@@ -36,4 +38,17 @@
 
 .card a:hover{
     text-decoration: underline;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+
+}
+
+.card-container:hover .card{
+    opacity: 0.5;
+}
+
+.card-container .card:hover {
+    opacity: 1;
 }

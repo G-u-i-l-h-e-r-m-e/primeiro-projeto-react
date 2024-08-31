@@ -1,8 +1,8 @@
 
-const Header = () =>{
+const Header = ({title,subtitulo}) =>{
 
     const headerStyle = {
-        background: '#BEBEBE',
+        background: '#f5b642',
         padding: '20px',
         textAlign: 'center',
         borderBottom: '2px solid #696969'
@@ -11,16 +11,19 @@ const Header = () =>{
     const titleStyle = {
         margin: 0,
         fontSize: '24px',
-        color: '#191970'
+        color: '#fff'
     }
+    // console.log(props.title);
 
     return(
 
         <header style={headerStyle}>
-            <h1 style={titleStyle}>Meu site</h1>
+            <h1 style={titleStyle}>{title}</h1>
+            <h2>{subtitulo}</h2>
         </header>
-
+        
     );
 }
 
 export default Header;
+
